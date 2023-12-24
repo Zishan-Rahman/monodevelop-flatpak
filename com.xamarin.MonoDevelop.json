@@ -152,7 +152,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.gnome.org/libsecret",
+                    "url": "git://gitlab.gnome.org/GNOME/libsecret",
                     "branch": "0.18.5"
                 }
             ]
