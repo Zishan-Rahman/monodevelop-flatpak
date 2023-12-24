@@ -153,7 +153,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://gitlab.gnome.org/GNOME/libsecret",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret",
                     "branch": "0.18.5"
                 }
             ]
@@ -181,7 +181,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/xamarin-gtk-theme.git",
+                    "url": "https://github.com/mono/xamarin-gtk-theme.git",
                     "branch": "master"
                 }
             ]
@@ -252,7 +252,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/libgdiplus.git",
+                    "url": "https://github.com/mono/libgdiplus.git",
                     "branch": "4.2"
                 }
             ]
@@ -264,7 +264,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/mono.git",
+                    "url": "https://github.com/mono/mono.git",
                     "branch": "mono-4.6.0.245"
                 },
                 {
@@ -317,7 +317,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/webkit-sharp.git",
+                    "url": "https://github.com/mono/webkit-sharp.git",
                     "branch": "0.3"
                 },
                 {
@@ -371,7 +371,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/msbuild.git",
+                    "url": "https://github.com/mono/msbuild.git",
                     "branch": "mono-2017-06"
                 },
                 {
@@ -391,7 +391,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/fsharp/fsharp.git",
+                    "url": "https://github.com/fsharp/fsharp.git",
                     "branch": "4.1.33"
                 },
                 {
@@ -413,7 +413,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/mono-basic.git",
+                    "url": "https://github.com/mono/mono-basic.git",
                     "branch": "4.6"
                 }
             ]
@@ -445,7 +445,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/xsp.git",
+                    "url": "https://github.com/mono/xsp.git",
                     "branch": "4.4"
                 }
             ]
@@ -457,7 +457,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/mono-tools.git",
+                    "url": "https://github.com/mono/mono-tools.git",
                     "branch": "4.2"
                 },
                 {
@@ -483,7 +483,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/dbus-sharp.git",
+                    "url": "https://github.com/mono/dbus-sharp.git",
                     "branch": "master"
                 },
                 {
@@ -502,7 +502,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/dbus-sharp-glib.git",
+                    "url": "https://github.com/mono/dbus-sharp-glib.git",
                     "branch": "master"
                 }
             ]
@@ -527,7 +527,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/mono/linux-packaging-core-setup.git",
+                    "url": "https://github.com/mono/linux-packaging-core-setup.git",
                     "branch": "master"
                 },
                 {
@@ -552,7 +552,7 @@
                 {
                     "type": "git",
                     "disable-shallow-clone": true,
-                    "url": "git://github.com/mono/monodevelop.git",
+                    "url": "https://github.com/mono/monodevelop.git",
                     "branch": "monodevelop-6.1.1.15"
                 },
                 {
