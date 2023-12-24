@@ -265,7 +265,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mono/mono.git",
-                    "branch": "mono-4.6.0.245"
+                    "branch": "mono-6.12.0.199"
                 },
                 {
                     "type": "patch",
