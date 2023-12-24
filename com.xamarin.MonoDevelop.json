@@ -182,7 +182,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mono/xamarin-gtk-theme.git",
-                    "branch": "master"
+                    "branch": "main"
                 }
             ]
         },
