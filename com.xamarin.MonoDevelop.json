@@ -343,7 +343,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/unicode-org/icu/releases/download/release-74-1/icu4c-74_1-Fedora_Linux36-x64.tgz",
-                    "sha256": "021896619e33de9e055a795657f9012173032c908011e1226eacab659e3209c1"
+                    "sha256": "fb0c7ccda5a7a0ce5d738b99c5d8e1a05ba97574821e11b8cf0e796213c8e1a4"
                 },
                 {
                     "type": "file",
