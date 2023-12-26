@@ -560,7 +560,7 @@
                     "type": "git",
                     "disable-shallow-clone": true,
                     "url": "https://github.com/mono/monodevelop.git",
-                    "branch": "monodevelop-6.1.1.15"
+                    "branch": "monodevelop-8.4.3.12"
                 },
                 {
                     "type": "patch",
