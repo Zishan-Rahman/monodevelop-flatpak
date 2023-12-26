@@ -491,7 +491,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mono/dbus-sharp.git",
-                    "branch": "master"
+                    "branch": "main"
                 },
                 {
                     "type": "patch",
@@ -510,7 +510,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mono/dbus-sharp-glib.git",
-                    "branch": "master"
+                    "branch": "main"
                 }
             ]
         },
