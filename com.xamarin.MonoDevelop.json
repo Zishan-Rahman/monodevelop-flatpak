@@ -535,7 +535,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mono/linux-packaging-core-setup.git",
-                    "branch": "master"
+                    "branch": "main"
                 },
                 {
                     "type": "patch",
