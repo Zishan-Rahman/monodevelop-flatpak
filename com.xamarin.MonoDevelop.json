@@ -559,9 +559,14 @@
                 {
                     "type": "git",
                     "disable-shallow-clone": true,
-                    "disable-submodules": "true",
+                    "disable-submodules": true,
                     "url": "https://github.com/mono/monodevelop.git",
                     "branch": "monodevelop-8.4.3.12"
+                },
+                {
+                    "type": "patch",
+                    "use-git": true,
+                    "path": "patches/monodevelop/use-https-for-git-submodules.patch"
                 },
                 {
                     "type": "patch",
@@ -613,7 +618,8 @@
                     "type": "patch",
                     "path": "patches/monodevelop/0001-AspNet-Fix-case-of-template-files.patch"
                 }
-            ]
+            ],
+           "build-commands": ["git submodule update --init --recursive --remote"]
         },
         {
             "name": "flatpak-metadata",
