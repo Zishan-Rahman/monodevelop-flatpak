@@ -633,7 +633,7 @@
             "sources": [
                 {
                     "type": "file",
-                    "path": "patches/flatpak-metadata/com.xamarin.MonoDevelop.appdata.xml",
+                    "path": "patches/flatpak-metadata/com.xamarin.MonoDevelop.appdata.xml.in",
                     "dest-filename": "com.xamarin.MonoDevelop.appdata.xml"
                 },
                 {
