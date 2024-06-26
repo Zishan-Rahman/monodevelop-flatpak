@@ -173,6 +173,33 @@
             ]
         },
         {
+            "name": "geoclue",
+            "buildsystem": "meson",
+            "config-opts": ["-Dintrospection=false", "-Dvapi=false", "-Dgtk-doc=false",
+            "-D3g-source=false", "-Dcdma-source=false", "-Dmodem-gps-source=false",
+            "-Dnmea-source=false", "-Ddemo-agent=false"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2",
+                    "sha256": "5624cd41148643c46d681d39153c7d26fdb8831e7e7c8601c300732fa8a6db1c"
+                }
+            ]
+        },
+        {
+            "name": "libsoup2.4",
+            "buildsystem": "meson",
+            "config-opts": ["-Dvapi=disabled", "-Dgtk_doc=false"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz",
+                    "mirror-urls": ["https://mirrors.gethosted.online/gnome/sources/libsoup/2.74/libsoup-2.74.3.tar.xz"],
+                    "sha256": "e4b77c41cfc4c8c5a035fcdc320c7bc6cfb75ef7c5a034153df1413fa1d92f13"
+                }
+            ]
+        },
+        {
             "name": "webkitgtk",
             "config-opts": ["--disable-gtk-doc",
                             "--disable-man",
