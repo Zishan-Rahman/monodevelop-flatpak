@@ -163,8 +163,7 @@
         {
             "name": "libsecret",
             "buildsystem": "meson",
-            "config-opts": ["--disable-gtk-doc",
-                            "--enable-introspection=no"],
+            "config-opts": ["-Dvapi=false", "-Dgtk_doc=false"],
             "sources": [
                 {
                     "type": "git",
