@@ -129,6 +129,10 @@
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gvfs/1.28/gvfs-1.28.3.tar.xz",
                     "sha256": "458c4cb68570f6ef4a9e152995c62d0057c3e0a07ed64d84c7200cdd22f0bd17"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/gvfs/gvfs_metatree.patch"
                 }
             ]
         },

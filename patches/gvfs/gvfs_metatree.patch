@@ -1,0 +1,10 @@
+--- a/metadata/metatree.c	2024-06-26 15:22:05.997594212 +0100
++++ b/metadata/metatree.c	2024-06-26 15:22:12.045724128 +0100
+@@ -2,6 +2,7 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <sys/mman.h>
++#include <sys/sysmacros.h>
+ #include <fcntl.h>
+ #include <string.h>
+ #include <unistd.h>
