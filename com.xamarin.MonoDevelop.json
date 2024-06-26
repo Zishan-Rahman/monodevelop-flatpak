@@ -555,71 +555,77 @@
         {
             "name": "monodevelop",
             "no-parallel-make": true,
-            "sources": [
+            "modules": [
                 {
-                    "type": "git",
-                    "disable-shallow-clone": true,
-                    "disable-submodules": true,
-                    "url": "https://github.com/mono/monodevelop.git",
-                    "branch": "monodevelop-8.4.3.12"
-                },
-                {
-                    "type": "patch",
-                    "use-git": true,
-                    "path": "patches/monodevelop/use-https-for-git-submodules.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/force-xamarin-theme.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/use_arial.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/restore-mono-addins.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/regenerate-mdaddins-at-startup.patch"
-                },
-                {
-                    "type": "patch",
-                    "use-git": true,
-                    "path": "patches/monodevelop/force-msbuild-backend-on-linux.patch"
-                },
-                {
-                    "type": "patch",
-                    "use-git": true,
-                    "path": "patches/monodevelop/sandbox_escape.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/buildinfo.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/rename-xdgmime-to-appid.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/be12b81d7db4aa653092037e79a79f4eceb39194.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/3637.diff"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/73ee7a59277b59602d162d9a1a398ef86e220941.diff"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/monodevelop/0001-AspNet-Fix-case-of-template-files.patch"
-                }
-            ],
-           "build-commands": ["git submodule update --init --recursive --remote"]
+                   "name": "monodevelop-sources",
+                   "buildsystem": "simple",
+                   "sources": [
+                      {
+                          "type": "git",
+                          "disable-shallow-clone": true,
+                          "disable-submodules": true,
+                          "url": "https://github.com/mono/monodevelop.git",
+                          "branch": "monodevelop-8.4.3.12"
+                      },
+                      {
+                          "type": "patch",
+                          "use-git": true,
+                          "path": "patches/monodevelop/use-https-for-git-submodules.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/force-xamarin-theme.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/use_arial.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/restore-mono-addins.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/regenerate-mdaddins-at-startup.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "use-git": true,
+                          "path": "patches/monodevelop/force-msbuild-backend-on-linux.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "use-git": true,
+                          "path": "patches/monodevelop/sandbox_escape.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/buildinfo.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/rename-xdgmime-to-appid.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/be12b81d7db4aa653092037e79a79f4eceb39194.patch"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/3637.diff"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/73ee7a59277b59602d162d9a1a398ef86e220941.diff"
+                      },
+                      {
+                          "type": "patch",
+                          "path": "patches/monodevelop/0001-AspNet-Fix-case-of-template-files.patch"
+                      }
+                  ],
+                 "build-commands": ["git submodule update --init --recursive --remote"]
+              }            
+            ]
         },
         {
             "name": "flatpak-metadata",
