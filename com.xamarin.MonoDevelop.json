@@ -205,11 +205,61 @@
                             "--disable-man",
                             "--with-gtk=2.0",
                             "--disable-webkit2"],
+            "build-options": {
+                "cflags": "-fno-delete-null-pointer-checks",
+                "cxxflags": "-fno-delete-null-pointer-checks",
+                "prepend-path": "/run/build/ruby:/app/ssl",
+                "env": {
+                    "RUBY": "/run/build/ruby"
+                }
+            },
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://webkitgtk.org/releases/webkitgtk-2.4.11.tar.xz",
                     "sha256": "588aea051bfbacced27fdfe0335a957dca839ebe36aa548df39c7bbafdb65bf7"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "ruby-build",
+                    "buildsystem": "simple",
+                    "build-options": {
+                        "prepend-path": "/app/ruby-build"
+                    },
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/rbenv/ruby-build.git",
+                            "branch": "v20240612"
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "openssl",
+                            "buildsystem": "simple",
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1w.tar.gz",
+                                    "sha256": "cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8"
+                                }
+                            ],
+                            "build-commands": [
+                                "exec ./config --prefix=/app/ssl --openssldir=/app/ssl",
+                                "make -j $FLATPAK_BUILDER_N_JOBS",
+                                "make install"
+                            ],
+                            "post-install": [
+                                "rm -rf /app/ssl/certs",
+                                "cp -r /etc/ssl/certs /app/ssl/certs"
+                            ]
+                        }
+                    ],
+                    "build-commands": [
+                        "PREFIX=/app ./install.sh",
+                        "RUBY_CONFIGURE_OPTS=--with-openssl-dir=/app/ssl/ ruby-build --verbose 2.4.10 /run/build/ruby"
+                    ]
                 }
             ]
         },
