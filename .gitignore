@@ -1,3 +1,5 @@
 .flatpak-builder/
 /monodevelop/
 *.appdata.xml
+.flatpak/
+.vscode/
