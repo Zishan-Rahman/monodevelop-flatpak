@@ -234,7 +234,7 @@
             ],
             "build-commands": [
                 "PREFIX=/app ./install.sh",
-                "RUBY_CONFIGURE_OPTS=--with-openssl-dir=/app/ssl/ ruby-build --verbose 2.4.10 /run/build/ruby"
+                "RUBY_CONFIGURE_OPTS=--with-openssl-dir=/app/ssl/ ruby-build --verbose 2.4.10 /app/ruby"
             ]
         },
         {
@@ -246,9 +246,9 @@
             "build-options": {
                 "cflags": "-fno-delete-null-pointer-checks",
                 "cxxflags": "-fno-delete-null-pointer-checks",
-                "prepend-path": "/run/build/ruby:/app/ssl",
+                "prepend-path": "/app/ruby:/app/ssl",
                 "env": {
-                    "RUBY": "/run/build/ruby"
+                    "RUBY": "/app/ruby"
                 }
             },
             "sources": [
