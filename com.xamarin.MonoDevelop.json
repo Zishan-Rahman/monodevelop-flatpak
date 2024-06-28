@@ -182,8 +182,8 @@
                             "--with-gtk=2.0",
                             "--disable-webkit2"],
             "build-options": {
-                "cflags": "-fno-delete-null-pointer-checks -fpermissive",
-                "cxxflags": "-fno-delete-null-pointer-checks -fpermissive",
+                "cflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
+                "cxxflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
                 "env": {
                     "RUBY": "/usr/local/bin/ruby"
                 }
