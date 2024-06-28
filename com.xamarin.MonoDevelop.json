@@ -7,6 +7,7 @@
     "rename-desktop-file": "monodevelop.desktop",
     "rename-icon": "monodevelop",
     "copy-icon": true,
+    "writable-sdk": true,
     "finish-args": [
         /* require FlatPak 0.8.0 to simplify documentation around modern syntax */
         /* require FlatPak 0.8.3 for OpenGL on non-Mesa */
