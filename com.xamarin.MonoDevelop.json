@@ -166,7 +166,7 @@
         },
         {
             "name": "ruby",
-            "config-opts": ["--with-openssl-dir=/app/ssl/"],
+            "config-opts": ["--with-openssl-dir=/app/ssl/", "--prefix=/usr", "--disable-install-doc"],
             "sources": [
                 {
                     "type": "archive",
@@ -183,11 +183,7 @@
                             "--disable-webkit2"],
             "build-options": {
                 "cflags": "-fno-delete-null-pointer-checks",
-                "cxxflags": "-fno-delete-null-pointer-checks",
-                "prepend-path": "/app/ruby:/app/ssl",
-                "env": {
-                    "RUBY": "/app/ruby"
-                }
+                "cxxflags": "-fno-delete-null-pointer-checks"
             },
             "sources": [
                 {
