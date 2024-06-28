@@ -164,21 +164,14 @@
             ]
         },
         {
-            "name": "ruby-build",
-            "buildsystem": "simple",
-            "build-options": {
-                "prepend-path": "/app/ruby-build"
-            },
+            "name": "ruby",
+            "config-opts": ["--with-openssl-dir=/app/ssl/"],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/rbenv/ruby-build.git",
-                    "branch": "v20240612"
+                    "type": "archive",
+                    "url": "https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.10.tar.xz",
+                    "sha256": "d5668ed11544db034f70aec37d11e157538d639ed0d0a968e2f587191fc530df"
                 }
-            ],
-            "build-commands": [
-                "PREFIX=/app ./install.sh",
-                "RUBY_CONFIGURE_OPTS=--with-openssl-dir=/app/ssl/ ruby-build --verbose 2.4.10 /app/ruby"
             ]
         },
         {
