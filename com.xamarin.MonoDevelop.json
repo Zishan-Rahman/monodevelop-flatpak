@@ -182,10 +182,22 @@
                             "--with-gtk=2.0",
                             "--disable-webkit2"],
             "build-options": {
-                "cflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
-                "cxxflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
+                "cflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_60",
+                "cxxflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_60",
                 "env": {
                     "RUBY": "/usr/local/bin/ruby"
+                },
+                "arch": {
+                    "aarch64": {
+                        "cflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_60",
+                        "cxxflags": "-pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_60",
+                        "env": {
+                            "RUBY": "/usr/local/bin/ruby"
+                        },
+                        "config-opts": [
+                            "--disable-jit"
+                        ]
+                    }
                 }
             },
             "sources": [
@@ -193,6 +205,15 @@
                     "type": "archive",
                     "url": "https://webkitgtk.org/releases/webkitgtk-2.4.11.tar.xz",
                     "sha256": "588aea051bfbacced27fdfe0335a957dca839ebe36aa548df39c7bbafdb65bf7"
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "patches/webkitgtk/webkitgtk-2.4.11.patch",
+                        "patches/webkitgtk/webkitgtk-fix.patch",
+                        "patches/webkitgtk/webkitgtk-41-fix.patch",
+                        "patches/webkitgtk/webkitgtk-ruby-fix.patch"
+                    ]
                 }
             ]
         },
