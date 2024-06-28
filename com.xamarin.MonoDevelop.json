@@ -48,28 +48,8 @@
                 "*.la", "*.a",
                 "*unwind*", "libicu*"],
     "modules": [
-        {
-        "name": "intltool",
-        "cleanup": [ "*" ],
-        "sources": [
-            {
-            "type": "archive",
-            "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
-            "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
-            }
-        ]
-        },
-        {
-            "name": "dbus-glib",
-            "config-opts": [ "--disable-static", "--disable-gtk-doc" ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.106.tar.gz",
-                    "sha256": "b38952706dcf68bad9c302999ef0f420b8cf1a2428227123f0ac4764b689c046"
-                }
-            ]
-        },
+        "shared-modules/intltool/intltool-0.51.json",
+        "shared-modules/dbus-glib/dbus-glib.json",
         {
             "name": "gconf",
             "config-opts": ["--disable-orbit"],
@@ -106,20 +86,7 @@
                 }
             ]
         },
-        {
-            "name": "gtk2",
-            "config-opts": ["--disable-gtk-doc",
-                            "--enable-introspection=no",
-                            "--disable-man",
-                            "--with-xinput=xfree"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.29.tar.xz",
-                    "sha256": "0741c59600d3d810a223866453dc2bbb18ce4723828681ba24aa6519c37631b8"
-                }
-            ]
-        },
+        "shared-modules/gtk2/gtk2.json",
         {
             "name": "gvfs",
             "config-opts": ["--disable-hal", "--disable-gdu","--disable-gcr","--disable-obexftp",
@@ -160,18 +127,7 @@
                 }
             ]
         },
-        {
-            "name": "libsecret",
-            "buildsystem": "meson",
-            "config-opts": ["-Dvapi=false", "-Dgtk_doc=false"],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libsecret.git",
-                    "branch": "0.18.8"
-                }
-            ]
-        },
+        "shared-modules/libsecret/libsecret.json",
         {
             "name": "geoclue",
             "buildsystem": "meson",
@@ -186,19 +142,7 @@
                 }
             ]
         },
-        {
-            "name": "libsoup2.4",
-            "buildsystem": "meson",
-            "config-opts": ["-Dvapi=disabled", "-Dgtk_doc=false"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz",
-                    "mirror-urls": ["https://mirrors.gethosted.online/gnome/sources/libsoup/2.74/libsoup-2.74.3.tar.xz"],
-                    "sha256": "e4b77c41cfc4c8c5a035fcdc320c7bc6cfb75ef7c5a034153df1413fa1d92f13"
-                }
-            ]
-        },
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "openssl",
             "buildsystem": "simple",
