@@ -293,7 +293,6 @@
         {
             "name": "mono",
             "config-opts": ["--disable-boehm"],
-            "no-parallel-make": true,
             "sources": [
                 {
                     "type": "git",
