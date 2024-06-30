@@ -359,11 +359,12 @@
         },
         {
             "name": "libunwind",
+            "no-parallel-make": true,
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.savannah.gnu.org/releases/libunwind/libunwind-1.2.tar.gz",
-                    "sha256": "1de38ffbdc88bd694d10081865871cd2bfbb02ad8ef9e1606aee18d65532b992"
+                    "url": "http://download.savannah.nongnu.org/releases/libunwind/libunwind-1.6.2.tar.gz",
+                    "sha256": "4a6aec666991fb45d0889c44aede8ad6eb108071c3554fcdff671f9c94794976"
                 }
             ]
         },
