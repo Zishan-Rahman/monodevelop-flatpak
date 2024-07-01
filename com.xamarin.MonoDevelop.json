@@ -385,15 +385,15 @@
             "no-autogen": true,
             "build-options": {
                 "build-args": [
-                    "--filesystem=%WORKSPACE%@tmp"
+                    "--filesystem=/tmp"
                 ],
                 "env": {
                     "__PUBLISH_RID": "ubuntu.14.04-x64",
-                    "TMPDIR": "%WORKSPACE%@tmp",
-                    "XDG_CACHE_HOME": "%WORKSPACE%@tmp",
-                    "XDG_CONFIG_HOME": "%WORKSPACE%@tmp",
-                    "HOME": "%WORKSPACE%@tmp",
-                    "XDG_DATA_HOME": "%WORKSPACE%@tmp"
+                    "TMPDIR": "/tmp",
+                    "XDG_CACHE_HOME": "/tmp",
+                    "XDG_CONFIG_HOME": "/tmp",
+                    "HOME": "/tmp",
+                    "XDG_DATA_HOME": "/tmp"
                 }
             },
             "sources": [
