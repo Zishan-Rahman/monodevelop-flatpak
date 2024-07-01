@@ -95,5 +95,11 @@
         "url": "https://globalcdn.nuget.org/packages/microsoft.build.tasks.core.14.3.0.nupkg",
         "sha512": "9c0b8f035885ebb0186c284ba157c325b0e0a59ef6a0af6270ab1023ad531f7adc531258060dba83b19318583ba45988eff18e49749c95706339a6c1fdace4bb",
         "dest": "patches/fsharp/nuget"
+    },
+    {
+        "type": "file",
+        "url": "https://globalcdn.nuget.org/packages/fsharp.compiler.tools.4.1.27.nupkg",
+        "sha512": "b333374d1b5022eda3b03b556177db01daabacafd44dc7bba3bfa002d5965503130a02a10d8c6a86759091448c30eff168ed9e454bc887bd869b022cb8cd166e",
+        "dest": "patches/fsharp/nuget"
     }
 ]
