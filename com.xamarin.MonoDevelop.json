@@ -381,35 +381,20 @@
             ]
         },
         {
+            "//": "Taken from https://github.com/flathub/org.freedesktop.Sdk.Extension.mono6/blob/4bd3add9e1b11cf7ea89d339804e9dfa573ad5d9/org.freedesktop.Sdk.Extension.mono6.json#L32 and adapted to fit this Flatpak",
             "name": "msbuild",
-            "no-autogen": true,
-            "build-options": {
-                "build-args": [
-                    "--filesystem=/tmp"
-                ],
-                "env": {
-                    "__PUBLISH_RID": "ubuntu.14.04-x64",
-                    "TMPDIR": "/tmp",
-                    "XDG_CACHE_HOME": "/tmp",
-                    "XDG_CONFIG_HOME": "/tmp",
-                    "HOME": "/tmp",
-                    "XDG_DATA_HOME": "/tmp"
-                }
-            },
+            "buildsystem": "simple",
+            "build-commands": [
+                "ar x msbuild_*.deb",
+                "rm -r msbuild_*.deb",
+                "tar xf data.tar.xz --strip-components=2 --exclude=doc --directory=/app",
+                "sed -i 's:/usr:/app:g' /app/bin/msbuild"
+            ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/mono/msbuild.git",
-                    "branch": "mono-2017-06"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/msbuild/5cf9eb2cc748907924342b32a3eefa78bb325de8.patch"
-                },
-                {
                     "type": "file",
-                    "path": "patches/msbuild/Makefile",
-                    "dest-filename": "Makefile"
+                    "url": "https://download.mono-project.com/repo/debian/pool/main/m/msbuild/msbuild_16.10.1%2bxamarinxplat.2021.05.26.14.00-0xamarin2%2bdebian10b1_all.deb",
+                    "sha256": "a177610be806c44877169a3fef7f15ffc65e2df7bdbe11b532eb6cc8f92b4c3c"
                 }
             ]
         },
