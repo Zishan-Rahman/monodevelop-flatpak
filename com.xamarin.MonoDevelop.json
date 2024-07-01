@@ -409,10 +409,6 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patches/fsharp/fsharp-install-netsdk-targets.patch"
-                },
-                {
-                    "type": "patch",
                     "path": "patches/fsharp/fix-bootstrap-src-targets-path.patch"
                 },
                 {
