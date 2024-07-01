@@ -414,6 +414,17 @@
                 {
                     "type": "patch",
                     "path": "patches/fsharp/fsharp-fix-mdb-support.patch"
+                },
+                "patches/fsharp/nuget/packages.json",
+                {
+                    "type": "file",
+                    "path": "patches/fsharp/nuget/packages.config"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "cp packages.config .nuget/NuGet.Config"
+                    ]
                 }
             ]
         },
