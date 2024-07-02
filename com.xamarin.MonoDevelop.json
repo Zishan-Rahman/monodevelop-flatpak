@@ -399,6 +399,28 @@
             ]
         },
         {
+            "name": "nuget",
+            "no-autogen": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.mono-project.com/sources/nuget/nuget-4.3.0.4406.bin.tar.xz",
+                    "sha256": "ca9f29895dbacf6a71801cdb2f89cfe5f7c37bf09c38712db8a9763e5d4aa209"
+                },
+                {
+                    "type": "file",
+                    "dest-filename": "Makefile",
+                    "path": "patches/nuget/Makefile"
+                },
+                {
+                    "type": "file",
+                    "dest-filename": "nuget",
+                    "dest": "launcher",
+                    "path": "patches/nuget/launcher"
+                }
+            ]
+        },
+        {
             "name": "fsharp",
             "no-parallel-make": true,
             "sources": [
@@ -435,28 +457,6 @@
                     "type": "git",
                     "url": "https://github.com/mono/mono-basic.git",
                     "branch": "4.6"
-                }
-            ]
-        },
-        {
-            "name": "nuget",
-            "no-autogen": true,
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.mono-project.com/sources/nuget/nuget-4.3.0.4406.bin.tar.xz",
-                    "sha256": "ca9f29895dbacf6a71801cdb2f89cfe5f7c37bf09c38712db8a9763e5d4aa209"
-                },
-                {
-                    "type": "file",
-                    "dest-filename": "Makefile",
-                    "path": "patches/nuget/Makefile"
-                },
-                {
-                    "type": "file",
-                    "dest-filename": "nuget",
-                    "dest": "launcher",
-                    "path": "patches/nuget/launcher"
                 }
             ]
         },
