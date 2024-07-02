@@ -423,6 +423,7 @@
         {
             "name": "fsharp",
             "no-parallel-make": true,
+            "config-opts": ["--prefix=/app"],
             "sources": [
                 {
                     "type": "git",
@@ -445,7 +446,8 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "cp packages.config .nuget/NuGet.Config"
+                        "mkdir -p packages/FSharp.Compiler.Tools.4.1.27",
+                        "unzip patches/fsharp/nuget/fsharp.compiler.tools.4.1.27.nupkg -d packages/FSharp.Compiler.Tools.4.1.27"
                     ]
                 }
             ]
