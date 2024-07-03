@@ -9,3 +9,13 @@
  
      let getCmdLineArg switchName defaultValue = 
          match getCmdLineArgOptional switchName with
+@@ -93,7 +93,7 @@
+     module Process =
+ 
+         let processExePath baseDir exe =
+-            if Path.IsPathRooted(exe) then exe
++            if Path.IsPathRooted(exe: string) then exe
+             else 
+                 match Path.GetDirectoryName(exe) with
+                 | "" -> exe
+
