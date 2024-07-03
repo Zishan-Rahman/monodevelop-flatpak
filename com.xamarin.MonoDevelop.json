@@ -423,7 +423,7 @@
         {
             "name": "fsharp",
             "no-parallel-make": true,
-            "config-opts": ["--prefix=/app"],
+            "no-autogen": true,
             "sources": [
                 {
                     "type": "git",
@@ -453,7 +453,10 @@
                 },
                 {
                     "type": "shell",
-                    "commands": ["python install_nuget_sources.py"]
+                    "commands": [
+                        "python install_nuget_sources.py",
+                        "./autogen.sh --prefix=/app"
+                    ]
                 }
             ]
         },
