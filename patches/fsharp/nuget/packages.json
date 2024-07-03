@@ -3,103 +3,120 @@
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microsoft.build.utilities.core.14.3.0.nupkg",
         "sha512": "27b93b26064cd20f84c274554c34108d219a77f0535586940a174b8e576627191ee23316406600b049de4510814a1adcd44744884648d11b827a15d9a8151efd",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "Microsoft.Build.Utilities.Core.14.3.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/system.reflection.metadata.1.4.2.nupkg",
         "sha512": "635d5a0789773d7e4482ed384dd9d092654505d081bd8b94537bb72eefdd4bdf00433e57c2a8c0bcd935754d9924721b63d43c88704337d452599665bdcfd8fa",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "System.Reflection.Metadata.1.4.2.nupkg"
     },
     
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microsoft.diasymreader.1.1.0.nupkg",
         "sha512": "a57653538cc35d7e8936869cfba56c21879cdcfa108633727106845f3ccbfbc2e96ff7c87aadbcca03dbc3eee78286e688f0532dbc39e7e81e6cfe53dc94ef96",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "Microsoft.DiaSymReader.1.1.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microsoft.diasymreader.portablepdb.1.1.0.nupkg",
         "sha512": "251a78c12de26d8a905b353443ee025f98acf29796f8d4c6cc1474ae3fe3372152a6fe0771dbdb3132899df9fbe8ca7c26e8ddf16d825475d06d88fd3c67cd13",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "Microsoft.DiaSymReader.PortablePdb.1.1.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microbuild.core.0.2.0.nupkg",
         "sha512": "340252cb01ff863e806310e56cf42315902617de36473732c034cb84589ef485402344b1cc764778e9e7deb8885e5c9c083194adfd419c61f736ba66b327d82d",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "MicroBuild.Core.0.2.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microsoft.build.framework.14.3.0.nupkg",
         "sha512": "b01cc56a1e7245c64a94a531698c863a9fb398e124c72eb74df73ef32b78183d1e6e04fbda03bf2039d195494a3c81b3dd02d5066e98a622436e71a9218fae88",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "Microsoft.Build.Framework.14.3.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/fslexyacc.7.0.6.nupkg",
         "sha512": "8ed154a35506ccf9fb8e2faa857244d4d2a85ed70f43bbe51f486468a1d65cea9b63e1bbd89b762f12bc08ffd060aec7a754cd12be3841a6f020a96bfe604f58",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "FsLexYacc.7.0.6.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/system.valuetuple.4.3.1.nupkg",
         "sha512": "7e11229bef1f725221f0f29bc4ea105c1af4934728ca80af0e43c84cf30e361d060cd82d640713bf5fe9c84a8ed0dd7cd632933ce84afbac078edccb56cba7ac",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "System.ValueTuple.4.3.1.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/system.collections.immutable.1.3.1.nupkg",
         "sha512": "978fabcd8b9b95bde6df55e7de282bfc1043ae8fe069ff64519392f8da424e64867ba2fe16fbbaa75d7505aafbbf92304b48a4275a3bdbe53e0c1ebda1c56672",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "System.Collections.Immutable.1.3.1.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microsoft.build.14.3.0.nupkg",
         "sha512": "b6a2c08ebd9c5f38db264dd9dcc0254ebbbaab4715cdc23e4170f162ea443de0627c544897584a7aaa3dc20ecfc70a48ed327ebc43f953d6446ddb8470dfd0f0",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "Microsoft.Build.14.3.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/nunit.console.3.0.0.nupkg",
         "sha512": "b3a9ad4cb892ddc85615c4e4dcb50ee32a81365772770496776294169eb7b22500b97daf297e4eaf393af5a57cc98d1bf7fd3a70bcea9e762e507c34f3c4d0b3",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "NUnit.Console.3.0.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/nunit.3.5.0.nupkg",
         "sha512": "9b136ddcb8946fc8f53c7870bd4c48a0738a5f5b1ddcaccd9a1976313b93081b814e13996c5a3a9ab45475ae8f2be8fc317948e6b63342270b9bd3ef63cc55bc",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "NUnit.3.5.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/nunitlite.3.5.0.nupkg",
         "sha512": "52afb1d64efcba86c976854a6ead03107defadc62d54ddb1749613ea7ab1602dc812af5819574bfd1e9a997f53b63dd9d6301bc2360e2faa23525a207ca2a20d",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "NUnitLite.3.5.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/fscheck.2.6.2.nupkg",
         "sha512": "ae5ac4075259393034e9439196938561399e49c4f8b47bd327fc220fa0c658d768fee32533b2c44a0201e42af1bbb894123bbd9debff5ae5b2f992c3ee82462f",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "FsCheck.2.6.2.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/nunit3testadapter.3.0.8-ctp-8.nupkg",
         "sha512": "c849b30af1caf1352c3225f4058c874b4e13e61c55e7b9a404740c2622cefd327c9184d1ff40607ff9a6d381046253edd66492ffdde52e9a5047f6a9f301a3e9",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "NUnit3TestAdapter.3.0.8-ctp-8.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/microsoft.build.tasks.core.14.3.0.nupkg",
         "sha512": "9c0b8f035885ebb0186c284ba157c325b0e0a59ef6a0af6270ab1023ad531f7adc531258060dba83b19318583ba45988eff18e49749c95706339a6c1fdace4bb",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "Microsoft.Build.Tasks.Core.14.3.0.nupkg"
     },
     {
         "type": "file",
         "url": "https://globalcdn.nuget.org/packages/fsharp.compiler.tools.4.1.27.nupkg",
         "sha512": "b333374d1b5022eda3b03b556177db01daabacafd44dc7bba3bfa002d5965503130a02a10d8c6a86759091448c30eff168ed9e454bc887bd869b022cb8cd166e",
-        "dest": "patches/fsharp/nuget"
+        "dest": "patches/fsharp/nuget",
+        "dest-filename": "FSharp.Compiler.Tools.4.1.27.nupkg"
     }
 ]
