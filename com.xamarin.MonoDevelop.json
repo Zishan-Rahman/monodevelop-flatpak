@@ -432,15 +432,11 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patches/fsharp/fix-bootstrap-src-targets-path.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/fsharp/fsharp-fix-mdb-support.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/fsharp/2d3a9bcd470be1d35d71e5d4b346698cd0f6c5b1.patch"
+                    "paths": [
+                        "patches/fsharp/fix-bootstrap-src-targets-path.patch",
+                        "patches/fsharp/fsharp-fix-mdb-support.patch",
+                        "patches/fsharp/2d3a9bcd470be1d35d71e5d4b346698cd0f6c5b1.patch"
+                    ]
                 },
                 "patches/fsharp/nuget/packages.json",
                 {
