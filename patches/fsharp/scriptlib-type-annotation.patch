@@ -1,0 +1,11 @@
+--- a/src/scripts/scriptlib.fsx	2024-07-03 21:50:00.219543589 +0100
++++ b/src/scripts/scriptlib.fsx	2024-07-03 21:52:09.254305836 +0100
+@@ -37,7 +37,7 @@
+     let argv = Microsoft.FSharp.Compiler.Interactive.Settings.fsi.CommandLineArgs |> Seq.skip 1 |> Seq.toArray
+ 
+     let getCmdLineArgOptional switchName = 
+-        argv |> Array.filter(fun t -> t.StartsWith(switchName)) |> Array.map(fun t -> t.Remove(0, switchName.Length).Trim()) |> Array.tryHead 
++        argv |> Array.filter(fun t -> t.StartsWith(switchName: string)) |> Array.map(fun t -> t.Remove(0, switchName.Length).Trim()) |> Array.tryHead 
+ 
+     let getCmdLineArg switchName defaultValue = 
+         match getCmdLineArgOptional switchName with
