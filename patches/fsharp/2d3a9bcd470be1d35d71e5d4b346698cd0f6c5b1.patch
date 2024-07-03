@@ -1,0 +1,51 @@
+From b2b174328a8ae52ac65317bcf7d51d8afbf8342a Mon Sep 17 00:00:00 2001
+From: Don Syme <dsyme@microsoft.com>
+Date: Thu, 19 Apr 2018 20:18:29 +0100
+Subject: [PATCH 1/2] fix build failure
+
+---
+ src/scripts/scriptlib.fsx | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/src/scripts/scriptlib.fsx b/src/scripts/scriptlib.fsx
+index 5a7be7d2bc..cd5af10772 100644
+--- a/src/scripts/scriptlib.fsx
++++ b/src/scripts/scriptlib.fsx
+@@ -59,10 +59,10 @@ module Scripting =
+ 
+     let (++) a b = Path.Combine(a,b)
+ 
+-    let getBasename a = Path.GetFileNameWithoutExtension a
+-    let getFullPath a = Path.GetFullPath a
+-    let getFilename a = Path.GetFileName a
+-    let getDirectoryName a = Path.GetDirectoryName a
++    let getBasename (path: string) = Path.GetFileNameWithoutExtension path
++    let getFullPath (path: string) = Path.GetFullPath path
++    let getFilename (path: string) = Path.GetFileName path
++    let getDirectoryName (path: string) = Path.GetDirectoryName path
+ 
+     let copyFile source dir =
+         let dest = 
+
+From 7e1effe5558bca55f9e12444fd6c78b040a8fe4f Mon Sep 17 00:00:00 2001
+From: Don Syme <dsyme@microsoft.com>
+Date: Thu, 19 Apr 2018 22:12:55 +0100
+Subject: [PATCH 2/2] fix build failure
+
+---
+ src/scripts/scriptlib.fsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/scripts/scriptlib.fsx b/src/scripts/scriptlib.fsx
+index cd5af10772..279c618b5b 100644
+--- a/src/scripts/scriptlib.fsx
++++ b/src/scripts/scriptlib.fsx
+@@ -64,7 +64,7 @@ module Scripting =
+     let getFilename (path: string) = Path.GetFileName path
+     let getDirectoryName (path: string) = Path.GetDirectoryName path
+ 
+-    let copyFile source dir =
++    let copyFile (source: string) dir =
+         let dest = 
+             if not (Directory.Exists dir) then Directory.CreateDirectory dir |>ignore
+             let result = Path.Combine(dir, Path.GetFileName source)
