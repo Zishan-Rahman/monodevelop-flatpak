@@ -459,8 +459,7 @@
         },
         {
             "name": "mono-tools",
-            "config-opts": ["--disable-gtk-doc",
-                            "--disable-man"],
+            "no-autogen": true,
             "sources": [
                 {
                     "type": "git",
@@ -470,6 +469,10 @@
                 {
                     "type": "patch",
                     "path": "patches/mono-tools/only_build_docbrowser.patch"
+                },
+                {
+                    "type": "shell",
+                    "commands": ["./autogen.sh --prefix=/app --disable-gtk-doc --disable-man"]
                 }
             ]
         },
