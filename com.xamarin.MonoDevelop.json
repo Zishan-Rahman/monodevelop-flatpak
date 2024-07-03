@@ -446,11 +446,14 @@
                     "path": "patches/fsharp/nuget/packages.config"
                 },
                 {
+                    "type": "file",
+                    "path": "patches/fsharp/nuget/install_nuget_sources.py",
+                    "dest-filename": "install_nuget_sources.py"
+
+                },
+                {
                     "type": "shell",
-                    "commands": [
-                        "mkdir -p packages/FSharp.Compiler.Tools.4.1.27",
-                        "unzip patches/fsharp/nuget/fsharp.compiler.tools.4.1.27.nupkg -d packages/FSharp.Compiler.Tools.4.1.27"
-                    ]
+                    "commands": ["python install_nuget_sources.py"]
                 }
             ]
         },
