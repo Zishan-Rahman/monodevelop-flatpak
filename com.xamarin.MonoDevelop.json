@@ -422,41 +422,18 @@
         },
         {
             "name": "fsharp",
-            "no-parallel-make": true,
-            "no-autogen": true,
+            "buildsystem": "simple",
+            "build-commands": [
+                "ar x fsharp_*.deb",
+                "rm -r fsharp_*.deb",
+                "tar xf data.tar.xz --strip-components=2 --exclude=doc --directory=/app",
+                "sed -i 's:/usr:/app:g' /app/bin/fsharpc /app/bin/fsharpi"
+            ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/fsharp/fsharp.git",
-                    "branch": "4.1.33"
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "patches/fsharp/fix-bootstrap-src-targets-path.patch",
-                        "patches/fsharp/fsharp-fix-mdb-support.patch",
-                        "patches/fsharp/2d3a9bcd470be1d35d71e5d4b346698cd0f6c5b1.patch",
-                        "patches/fsharp/fssrgen-type-annotation.patch",
-                        "patches/fsharp/scriptlib-type-annotation.patch"
-                    ]
-                },
-                "patches/fsharp/nuget/packages.json",
-                {
                     "type": "file",
-                    "path": "patches/fsharp/nuget/packages.config"
-                },
-                {
-                    "type": "file",
-                    "path": "patches/fsharp/nuget/install_nuget_sources.py",
-                    "dest-filename": "install_nuget_sources.py"
-
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "python install_nuget_sources.py",
-                        "./autogen.sh --prefix=/app"
-                    ]
+                    "url": "https://download.mono-project.com/repo/debian/pool/main/f/fsharp/fsharp_4.1.33-0xamarin11+ubuntu1804b1_all.deb",
+                    "sha256": "d597998e908f3f92b1472752c7cb25a056ea8334d72f95769148b0fa70c38fdd"
                 }
             ]
         },
