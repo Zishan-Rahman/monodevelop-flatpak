@@ -458,6 +458,66 @@
             ]
         },
         {
+            "//": "Needed so that mono-tools can pass the config step",
+            "name": "mono-nunit",
+            "buildsystem": "simple",
+            "build-commands": [
+                "for debfile in `ls *.deb`; do ar x $debfile; rm -r $debfile; tar xf data.tar.xz --strip-components=2 --exclude=doc --directory=/app; done",
+                "sed -i 's:/usr:/app:g' /app/bin/nunit-console /app/bin/nunit-gui",
+                "mv mono-nunit.pc /app/lib/pkgconfig",
+                "echo $PKG_CONFIG_PATH"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/nunit-gui_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "1260dfd43bd454f0a36bf47ab995212d18bb1643391f00e00e87801a47fb05da"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/nunit-console_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "4166d36bd3cc3e898d5ac7b0760e7d092a8e182c1c43d1b75b571243354e1c3f"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/libnunit-util2.6.3-cil_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "1b6c4318d180d675488f834d73fa0656d5c6db072d06c28afb693f63b107702c"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/libnunit-mocks2.6.3-cil_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "f53ea096b70135d872e6248de1b4808271c7f41be9f647fd7bda7cad69088d9c"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/libnunit-framework2.6.3-cil_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "61c88126bbb0c33611f58878e4cf057c2f04ac38bd17eabe91418640467ae986"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/libnunit-core-interfaces2.6.3-cil_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "e8269357970b32c0728251c3d186ec259e9919cdfeae381e00d7f9b2f0a9f8e6"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/libnunit-console-runner2.6.3-cil_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "bd11de927345dfe2cf2dd61d7d4a504b0649f220b0ecebc1ef1edcd952d7b475"
+                },
+                {
+                    "type": "file",
+                    "url": "http://ftp.uk.debian.org/debian/pool/main/n/nunit/libnunit-core2.6.3-cil_2.6.4+dfsg-1.1_all.deb",
+                    "sha256": "cad31234fa485008e7748ce6f4ab64a0fc5908682bfeed3cf6e5d94b4d54b1be"
+                },
+                {
+                    "//": "This file is only here to add a pkgconfig file to /app/lib so that mono-tools can actually find mono-nunit in pkgconfig and proceed with its build.",
+                    "type": "file",
+                    "url": "https://src.fedoraproject.org/rpms/nunit/raw/d641e59f7a357749075cda4c14b4436408fe59de/f/nunit.pc",
+                    "sha256": "e2491e5f3c83a964faad38a4c795777493fc534facafb5b860226f7b000948a4",
+                    "dest-filename": "mono-nunit.pc"
+                }
+            ]
+        },
+        {
             "name": "mono-tools",
             "no-autogen": true,
             "sources": [
