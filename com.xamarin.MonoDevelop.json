@@ -472,7 +472,7 @@
                 },
                 {
                     "type": "shell",
-                    "commands": ["./autogen.sh --prefix=/app --disable-gtk-doc --disable-man"]
+                    "commands": ["./autogen.sh --prefix=/app --exec-prefix=/app --disable-gtk-doc --disable-man --disable-silent-rules"]
                 }
             ]
         },
