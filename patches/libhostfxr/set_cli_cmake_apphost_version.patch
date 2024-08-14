@@ -1,5 +1,5 @@
---- a/src/coreshost/cli/fxr/setup.cmake	2024-08-14 13:02:57.725199848 +0100
-+++ a/src/coreshost/cli/fxr/setup.cmake	2024-08-14 13:02:16.223563159 +0100
+--- a/src/corehost/cli/fxr/setup.cmake	2024-08-14 13:02:57.725199848 +0100
++++ a/src/corehost/cli/fxr/setup.cmake	2024-08-14 13:02:16.223563159 +0100
 @@ -2,6 +2,8 @@
  # The .NET Foundation licenses this file to you under the MIT license.
  # See the LICENSE file in the project root for more information.
