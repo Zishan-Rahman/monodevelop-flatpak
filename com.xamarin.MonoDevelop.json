@@ -607,7 +607,14 @@
                 {
                     "type": "file",
                     "path": "patches/libhostfxr/Makefile",
-                    "dest-filename": "Makefile"
+                    "dest-filename": "Makefile",
+                    "only-arches": ["x86_64"]
+                },
+                {
+                    "type": "file",
+                    "path": "patches/libhostfxr/Makefile-aarch64",
+                    "dest-filename": "Makefile",
+                    "only-arches": ["aarch64"]
                 }
             ]
         },
