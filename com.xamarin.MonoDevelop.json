@@ -602,7 +602,10 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patches/libhostfxr/avoid_cmake_unknown_command.patch"
+                    "paths": [
+                        "patches/libhostfxr/avoid_cmake_unknown_command.patch",
+                        "patches/libhostfxr/set_cli_cmake_apphost_version.patch"
+                    ]
                 },
                 {
                     "type": "file",
@@ -614,6 +617,16 @@
                     "type": "file",
                     "path": "patches/libhostfxr/Makefile-aarch64",
                     "dest-filename": "Makefile",
+                    "only-arches": ["aarch64"]
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/libhostfxr/set_build_architecture_x86_64.patch",
+                    "only-arches": ["x86_64"]
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/libhostfxr/set_build_architecture_aarch64.patch",
                     "only-arches": ["aarch64"]
                 }
             ]

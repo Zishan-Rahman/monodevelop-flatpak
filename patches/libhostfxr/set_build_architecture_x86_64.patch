@@ -1,0 +1,9 @@
+--- a/src/coreshost/cli/fxr/setup.cmake	2024-08-14 13:09:06.423768858 +0100
++++ a/src/coreshost/cli/fxr/setup.cmake	2024-08-14 13:08:56.332618043 +0100
+@@ -45,3 +45,5 @@
+     add_definitions(-DREPO_COMMIT_HASH="${CLI_CMAKE_COMMIT_HASH}")
+ endif()
+ 
++add_definitions(-D_TARGET_AMD64_=1)
++set(ARCH_SPECIFIC_FOLDER_NAME "AMD64")
+\ No newline at end of file
